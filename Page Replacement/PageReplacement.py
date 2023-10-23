@@ -26,7 +26,7 @@ def printFrame(q):
 ''' First in First out Algorithm'''
 def FIFO(refString):
     q = []
-    currentIndex = 0.0
+    currentIndex = 0
     pageFaults=0
     for page in refString.split(","):
         if page not in q:
@@ -39,7 +39,7 @@ def FIFO(refString):
         printFrame(q)
     print("Page Faults = %d" %pageFaults)
     return pageFaults
-''' Least Frequently Used Algorithm'''
+''' LFU Algorithm'''
 def LFU(refString):
     q = []
     pageFaults=0
