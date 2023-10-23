@@ -11,7 +11,7 @@ import random as rand
 import matplotlib.pyplot as plt
 
 ''' Frames Printing Function '''
-def printFrame(q):
+def printFrame(q):               
     print("Page Frames: ")
     for i in range(len(q)):
         print("--- ",end=" ")
@@ -26,7 +26,7 @@ def printFrame(q):
 ''' First in First out Algorithm'''
 def FIFO(refString):
     q = []
-    currentIndex = 0
+    currentIndex = 0.0
     pageFaults=0
     for page in refString.split(","):
         if page not in q:
